@@ -4,15 +4,14 @@ const primaryColor = const Color(0xFF77DC58);
 const primaryLight = const Color(0xFF494A68);
 const primaryDark = const Color(0xFF424361);
 
-const primaryGradientStart = const Color(0xFF65BCD0);
-const primaryGradientEnd = const Color(0xFF37EBBB);
+const primaryGradientStart = const Color(0xFF10C7E0);
+const primaryGradientEnd = const Color(0xFF00D5C3);
 const primaryGradient = const LinearGradient(
   colors: const [primaryGradientStart, primaryGradientEnd],
-  begin: Alignment.topLeft,
-  end: Alignment.bottomRight,
 );
 
-const statusBarColor = primaryLight;
-const appBarColor = primaryLight;
-const scaffoldColor = primaryDark;
-const bottomNavBarColor = primaryLight;
+const statusBarColor = Color(0xFFFFFFFF);
+const scaffoldColor = Color(0xFFF9F9F9);
+const appBarColor = Color(0xFFFFFFFF);
+const unselectedTabLabelColor = Color(0xFFC6CED3);
+

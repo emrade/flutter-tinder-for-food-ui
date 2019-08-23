@@ -12,8 +12,6 @@ ThemeData buildThemeData() {
     primaryColorDark: primaryDark,
     primaryColorLight: primaryLight,
     scaffoldBackgroundColor: scaffoldColor,
-    appBarTheme: AppBarTheme(
-      color: appBarColor,
-    ),
+    appBarTheme: AppBarTheme(color: appBarColor)
   );
 }
