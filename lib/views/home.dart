@@ -14,8 +14,11 @@ class _HomePageState extends State<HomePage> {
       bottom: TabBar(
         unselectedLabelColor: unselectedTabLabelColor,
         labelColor: Theme.of(context).primaryColor,
+        indicatorPadding: EdgeInsets.all(0.0),
+        indicatorWeight: 4.0,
+        labelPadding: EdgeInsets.only(left: 0.0, right: 0.0),
         indicator: BoxDecoration(
-          gradient: primaryGradient,
+          gradient: primaryGradient
         ),
         tabs: <Widget>[
           _buildTab(Icons.search),
@@ -43,7 +46,10 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildTab(IconData icon) {
-    return Tab(
+    return Container(
+      height: 40,
+      alignment: Alignment.center,
+      color: Colors.white,
       child: Icon(icon, size: 40.0),
     );
   }
