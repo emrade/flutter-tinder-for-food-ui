@@ -13,7 +13,6 @@ class AvailableFonts {
 }
 
 class AvailableImages {
-  static const appLogo = 'assets/images/logo.png';
-  static const appBg = 'assets/images/bg.png';
-  static const empty = 'assets/images/empty.png';
+  static const woman = 'assets/images/woman.jpg';
+  static const burger = 'assets/images/burger.jpg';
 }
