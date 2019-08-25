@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:line_icons/line_icons.dart';
+import 'tabs/account.dart';
+import 'tabs/search.dart';
+import 'tabs/saved.dart';
 import '../utils/colors.dart';
+
 
 class HomePage extends StatefulWidget {
   @override
@@ -14,25 +17,24 @@ class _HomePageState extends State<HomePage> {
       bottom: TabBar(
         unselectedLabelColor: unselectedTabLabelColor,
         labelColor: Theme.of(context).primaryColor,
-        indicatorPadding: EdgeInsets.all(0.0),
-        indicatorWeight: 4.0,
         labelPadding: EdgeInsets.only(left: 0.0, right: 0.0),
+        indicatorWeight: 5.0,
         indicator: BoxDecoration(
-          gradient: primaryGradient
+          gradient: primaryGradient,
         ),
         tabs: <Widget>[
           _buildTab(Icons.search),
           _buildTab(Icons.star),
-          _buildTab(LineIcons.user),
+          _buildTab(Icons.account_circle),
         ],
       ),
     );
 
     final body = TabBarView(
       children: [
-        Icon(Icons.search),
-        Icon(Icons.star),
-        Icon(LineIcons.user),
+        SearchPage(),
+        SavedPage(),
+        AccountPage(),
       ],
     );
 
@@ -47,7 +49,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildTab(IconData icon) {
     return Container(
-      height: 40,
+      height: 40.0,
       alignment: Alignment.center,
       color: Colors.white,
       child: Icon(icon, size: 40.0),
