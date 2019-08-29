@@ -77,7 +77,7 @@ class AccountPage extends StatelessWidget {
 
     final br = Radius.circular(30.0);
 
-    final reviewList = reviews.map((review) => ReviewCard(review: review,)).toList();
+    final reviewList = reviews.map((review) => ReviewCard(review: review)).toList();
 
     final reviewsSection = Container(
       padding: EdgeInsets.only(top: 30.0, left: 30.0),
