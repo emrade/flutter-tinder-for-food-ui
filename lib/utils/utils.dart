@@ -15,4 +15,10 @@ class AvailableFonts {
 class AvailableImages {
   static const woman = 'assets/images/woman.jpg';
   static const burger = 'assets/images/burger.jpg';
+  static const cafe = 'assets/images/cafe.jpg';
+  static const gelato = 'assets/images/gelato.jpg';
+  static const tacos = 'assets/images/tacos.jpg';
+  static const iphone = 'assets/images/iphone.png';
+  static const navigate = 'assets/images/navigate.png';
+  static const website = 'assets/images/website.png';
 }

@@ -27,7 +27,10 @@ class ResturantCard extends StatelessWidget {
     final _name = Text(
       resturant.name,
       style: TextStyle(
-          color: Colors.white, fontSize: 18.0, fontWeight: FontWeight.bold),
+        color: Colors.white,
+        fontSize: 18.0,
+        fontWeight: FontWeight.bold,
+      ),
     );
 
     final _location = Row(
@@ -84,21 +87,28 @@ class ResturantCard extends StatelessWidget {
     );
 
     return GestureDetector(
-      onTap: (){
-        Navigator.pushNamed(context, foodDetailsViewRoute, arguments: resturant);
+      onTap: () {
+        Navigator.pushNamed(
+          context,
+          resturantDetailsViewRoute,
+          arguments: resturant,
+        );
       },
       child: Stack(
         children: <Widget>[
-          Container(
-            margin: EdgeInsets.only(bottom: 10.0),
-            height: screenHeight * 0.4,
-            width: screenWidth * 0.45,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(resturant.photo),
-                fit: BoxFit.cover,
+          Hero(
+            tag: resturant.id,
+            child: Container(
+              margin: EdgeInsets.only(bottom: 10.0),
+              height: screenHeight * 0.4,
+              width: screenWidth * 0.45,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(resturant.photo),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(20.0),
               ),
-              borderRadius: BorderRadius.circular(20.0),
             ),
           ),
           _details

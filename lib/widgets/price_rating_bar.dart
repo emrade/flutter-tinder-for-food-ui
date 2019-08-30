@@ -4,12 +4,14 @@ class PriceRatingBar extends StatelessWidget {
   final int dollarCount;
   final int rating;
   final Color color;
+  final double size;
 
   const PriceRatingBar(
       {Key key,
       this.dollarCount = 3,
       this.rating = 0,
-      this.color = Colors.white})
+      this.color = Colors.white,
+      this.size = 15.0})
       : super(key: key);
 
   Widget _buildDollars(BuildContext context, int index) {
@@ -24,7 +26,8 @@ class PriceRatingBar extends StatelessWidget {
     }
     return Text(
       dolls,
-      style: TextStyle(color: iColor, fontWeight: FontWeight.bold, fontSize: 15.0),
+      style:
+          TextStyle(color: iColor, fontWeight: FontWeight.bold, fontSize: size),
     );
   }
 

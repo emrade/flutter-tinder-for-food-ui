@@ -43,6 +43,12 @@ flutter:
   assets:
    - assets/images/woman.jpg
    - assets/images/burger.jpg
+   - assets/images/cafe.jpg
+   - assets/images/gelato.jpg
+   - assets/images/tacos.jpg
+   - assets/images/iphone.png
+   - assets/images/navigate.png
+   - assets/images/website.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
