@@ -15,8 +15,8 @@ class Resturant {
 }
 
 List<Resturant> resturants = [
-  Resturant(1, AvailableImages.burger, "The Beer & Burger Bar", "Hamburger Resturant", 1, 5.0),
-  Resturant(2, AvailableImages.burger, "Taco Jill", "Mexican", 1, 4.5),
-  Resturant(3, AvailableImages.burger, "Gellato Messina", "Mexican", 2, 5.0),
-  Resturant(4, AvailableImages.burger, "The Industrial Cafe", "Cafe", 2, 5.0),
+  Resturant(1, AvailableImages.burger, "The Beer & Burger Bar", "Burger Bar", 1, 4.5),  
+  Resturant(2, AvailableImages.burger, "Gellato Messina", "Mexican", 2, 5.0),
+  Resturant(3, AvailableImages.burger, "Taco Jill", "Mexican", 1, 4.0),
+  Resturant(4, AvailableImages.burger, "The Industrial Cafe", "Cafe", 2, 4.5),
 ];
