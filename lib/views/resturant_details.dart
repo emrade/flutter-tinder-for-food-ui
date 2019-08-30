@@ -9,12 +9,14 @@ import '../widgets/rating_bar.dart';
 import './../models/resturant.dart';
 
 class ResturantDetailsPage extends StatelessWidget {
-  final Resturant resturant;
+  final int resturantId;
 
-  const ResturantDetailsPage({Key key, @required this.resturant})
+  const ResturantDetailsPage({Key key, @required this.resturantId})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
+    final Resturant resturant =  resturants.singleWhere((resturant) => resturant.id == resturantId);
+
     final screenHeight = MediaQuery.of(context).size.height;
 
     final cancelBtn = Positioned(

@@ -91,7 +91,7 @@ class ResturantCard extends StatelessWidget {
         Navigator.pushNamed(
           context,
           resturantDetailsViewRoute,
-          arguments: resturant,
+          arguments: resturant.id,
         );
       },
       child: Stack(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tinder_for_food/router.dart';
 import '../widgets/rating_bar.dart';
 import '../models/review.dart';
 
@@ -17,26 +18,38 @@ class ReviewCard extends StatelessWidget {
       ),
     );
 
-    final img = Container(
-      margin: EdgeInsets.only(right: 10.0),
-      height: 40.0,
-      width: 40.0,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12.0),
-        image: DecorationImage(
-          image: AssetImage(
-            review.resturantPhoto,
+    final img = GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(context, resturantDetailsViewRoute,
+            arguments: review.resturantId);
+      },
+      child: Container(
+        margin: EdgeInsets.only(right: 10.0),
+        height: 40.0,
+        width: 40.0,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12.0),
+          image: DecorationImage(
+            image: AssetImage(
+              review.resturantPhoto,
+            ),
+            fit: BoxFit.cover,
           ),
-          fit: BoxFit.cover,
         ),
       ),
     );
 
-    final _name = Text(
-      review.resturantName,
-      style: TextStyle(
-        fontSize: 16.0,
-        fontWeight: FontWeight.bold,
+    final _name = InkWell(
+      onTap: () {
+        Navigator.pushNamed(context, resturantDetailsViewRoute,
+            arguments: review.resturantId);
+      },
+      child: Text(
+        review.resturantName,
+        style: TextStyle(
+          fontSize: 16.0,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
 

@@ -10,7 +10,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case homeViewRoute:
       return MaterialPageRoute(builder: (_) => HomePage());
     case resturantDetailsViewRoute:
-      return MaterialPageRoute(builder: (_) => ResturantDetailsPage(resturant: settings.arguments));
+      return MaterialPageRoute(builder: (_) => ResturantDetailsPage(resturantId: settings.arguments));
 
       break;
     default:
