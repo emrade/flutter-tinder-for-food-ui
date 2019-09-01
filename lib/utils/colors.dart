@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 
 const primaryColor = const Color(0xFF00D5C3);
-const primaryLight = const Color(0xFF494A68);
-const primaryDark = const Color(0xFF424361);
+const secondaryColor = const Color(0xFF96CBDD);
+
 
 const primaryGradientStart = const Color(0xFF10C7E0);
 const primaryGradientEnd = const Color(0xFF00D5C3);

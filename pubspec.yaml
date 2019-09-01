@@ -49,6 +49,10 @@ flutter:
    - assets/images/iphone.png
    - assets/images/navigate.png
    - assets/images/website.png
+   - assets/images/like.png
+   - assets/images/hate.png
+   - assets/images/back.png
+   - assets/images/list.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

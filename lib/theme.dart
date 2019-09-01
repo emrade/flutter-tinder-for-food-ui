@@ -9,8 +9,6 @@ ThemeData buildThemeData() {
 
   return baseTheme.copyWith(
     primaryColor: primaryColor,
-    primaryColorDark: primaryDark,
-    primaryColorLight: primaryLight,
     scaffoldBackgroundColor: scaffoldColor,
     appBarTheme: AppBarTheme(color: appBarColor)
   );

@@ -7,8 +7,9 @@ import 'rating_bar.dart';
 
 class ResturantCardBig extends StatelessWidget {
   final Resturant resturant;
+  final double width;
 
-  const ResturantCardBig({Key key, @required this.resturant}) : super(key: key);
+  const ResturantCardBig({Key key, @required this.resturant, this.width = 0.9}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
@@ -93,7 +94,7 @@ class ResturantCardBig extends StatelessWidget {
           elevation: 4.0,
           child: Container(
             height: screenHeight * 0.6,
-            width: screenWidth * 0.9,
+            width: screenWidth * width,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(resturant.photo),
