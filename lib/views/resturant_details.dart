@@ -3,7 +3,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import '../utils/utils.dart';
-import '../utils/colors.dart';
 import '../widgets/price_rating_bar.dart';
 import '../widgets/rating_bar.dart';
 import './../models/resturant.dart';
@@ -157,7 +156,7 @@ class ResturantDetailsPage extends StatelessWidget {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 15.0,
-              color: primaryColor,
+              color: Theme.of(context).primaryColor,
             ),
           ),
           Row(

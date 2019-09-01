@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      title: Text("Tinder", style: TextStyle(color: Colors.black, fontSize: 28.0)),
+      title: Text("Foodie 😍", style: TextStyle(color: Theme.of(context).primaryColor, fontSize: 28.0)),
       centerTitle: true,
       bottom: TabBar(
         unselectedLabelColor: unselectedTabLabelColor,

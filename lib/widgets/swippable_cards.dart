@@ -14,9 +14,19 @@ class _SwippableCardsState extends State<SwippableCards> {
 
   void _removeCard(index) {
     setState(() {
+      // Get a copy of item to be removed
+      Resturant r = _resturantsCopy[index];
+
+      // Remove Card from List
       cardList.removeAt(index);
+
+      // Remove Item from List
       _resturantsCopy.removeAt(index);
 
+      // Insert item back into the list so we have a continous stream of data
+      _resturantsCopy.insert(0, r);
+
+      // Rebuild the card list with the new data
       cardList = _getSwipeCards();
     });
   }

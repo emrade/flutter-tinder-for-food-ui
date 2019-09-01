@@ -53,6 +53,7 @@ flutter:
    - assets/images/hate.png
    - assets/images/back.png
    - assets/images/list.png
+   - assets/images/logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
